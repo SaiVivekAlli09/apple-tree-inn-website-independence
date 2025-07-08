@@ -21,7 +21,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-accent/90 z-10"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/b1e09231-70a1-490e-ab3d-9eea6eb9ce1b.png')] bg-cover bg-center"></div>
         
         <div className="relative z-20 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -135,7 +135,7 @@ const Index = () => {
               <Card key={room.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative">
                   <img
-                    src={`https://images.unsplash.com/${room.image}?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80`}
+                    src={room.image}
                     alt={room.name}
                     className="w-full h-full object-cover"
                   />
@@ -239,8 +239,8 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Downtown Independence"
+                  src="/lovable-uploads/36919239-f09b-45af-9159-53489478f68c.png"
+                  alt="AppleTree Inn Exterior"
                   className="w-full h-full object-cover"
                 />
               </div>

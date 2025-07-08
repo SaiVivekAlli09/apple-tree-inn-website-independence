@@ -37,7 +37,7 @@ const Rooms = () => {
               <Card key={room.id} className="overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative">
                   <img
-                    src={`https://images.unsplash.com/${room.image}?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`}
+                    src={room.image}
                     alt={room.name}
                     className="w-full h-full object-cover"
                   />

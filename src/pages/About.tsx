@@ -58,7 +58,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/lovable-uploads/36919239-f09b-45af-9159-53489478f68c.png"
                   alt="AppleTree Inn Building"
                   className="w-full h-full object-cover"
                 />
@@ -123,8 +123,55 @@ const About = () => {
         </div>
       </section>
 
-      {/* Amenities Overview */}
+      {/* Pool & Amenities Section */}
       <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/lovable-uploads/b2640bd5-8c91-4d9d-9725-33f31d37fac7.png"
+                  alt="Indoor Pool and Recreation Area"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Relax & Unwind
+              </h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Our indoor pool and recreation area provides the perfect space to relax after a day 
+                of exploring Independence. Featuring a beautiful pool with waterfall feature and 
+                comfortable seating areas.
+              </p>
+              
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Indoor heated swimming pool</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  <span>Waterfall feature</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Comfortable seating and recreation area</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  <span>Climate controlled environment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Amenities Overview */}
+      <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
