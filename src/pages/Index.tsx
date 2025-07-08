@@ -14,7 +14,7 @@ const Index = () => {
     }
   };
 
-  const featuredRooms = rooms.slice(0, 3);
+  const featuredRooms = rooms; // Display all rooms
 
   return (
     <Layout>
@@ -130,7 +130,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {featuredRooms.map((room) => (
               <Card key={room.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative">
@@ -245,6 +245,85 @@ const Index = () => {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hotel Amenities */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Hotel Amenities & Services
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Enjoy our premium facilities and services designed for your comfort and convenience
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Breakfast */}
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative">
+                <img
+                  src="/lovable-uploads/a319543f-6d0f-4c77-bf7d-7afdf510b7f3.png"
+                  alt="Breakfast Area"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl">Complimentary Breakfast</CardTitle>
+                <CardDescription>Daily 6:30 AM - 9:00 AM</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Start your day right with our complimentary breakfast served in our cozy dining area. 
+                  Fresh coffee, pastries, and hearty options available.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Indoor Pool */}
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative">
+                <img
+                  src="/lovable-uploads/4a65cc24-75d0-447c-9233-e88af67f8f24.png"
+                  alt="Indoor Pool"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl">Indoor Pool & Recreation</CardTitle>
+                <CardDescription>Open Daily</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Relax and unwind in our beautiful indoor pool area featuring comfortable seating, 
+                  natural lighting, and a peaceful atmosphere.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Reception */}
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative">
+                <img
+                  src="/lovable-uploads/4f5dbaf2-46b5-4d8a-b499-261587deb8e3.png"
+                  alt="Reception Area"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl">24-Hour Reception</CardTitle>
+                <CardDescription>Always Here to Help</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Our friendly staff is available 24/7 at our modern reception desk to assist 
+                  with check-in, local recommendations, and any special requests.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

@@ -26,7 +26,7 @@ export const rooms: Room[] = [
       "Work desk",
       "Daily housekeeping"
     ],
-    image: "/lovable-uploads/26d1b96f-dba8-4b3e-b9d4-ce927a5609d8.png",
+    image: "/lovable-uploads/8af38051-83db-489e-9e35-6852cc30d404.png",
     maxGuests: 2,
     bedType: "King Bed"
   },
@@ -69,7 +69,7 @@ export const rooms: Room[] = [
       "Daily housekeeping",
       "Premium linens"
     ],
-    image: "/lovable-uploads/770fa63a-9d17-4ac1-805f-02f9aa926cda.png",
+    image: "/lovable-uploads/6d0cef9f-e77d-4bca-878f-bdc922e4fa7f.png",
     maxGuests: 2,
     bedType: "King Bed"
   },
@@ -105,7 +105,7 @@ export const rooms: Room[] = [
     features: [
       "Two queen-size beds",
       "Large living room area",
-      "Private bathroom with premium fixtures",
+      "Private bathroom with premium fixtures & jacuzzi",
       "Air conditioning & heating",
       "Free Wi-Fi",
       "Premium flat-screen TV",
@@ -118,7 +118,7 @@ export const rooms: Room[] = [
       "Complimentary coffee & tea",
       "Additional storage space"
     ],
-    image: "/lovable-uploads/720b1573-db60-4493-bd91-7cace10e04fc.png",
+    image: "/lovable-uploads/c2af490f-df7b-4274-86df-db46d9ab387c.png",
     maxGuests: 4,
     bedType: "Two Queen Beds"
   }
