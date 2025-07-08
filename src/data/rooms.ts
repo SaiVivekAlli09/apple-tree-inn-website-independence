@@ -69,7 +69,7 @@ export const rooms: Room[] = [
       "Daily housekeeping",
       "Premium linens"
     ],
-    image: "/lovable-uploads/6d0cef9f-e77d-4bca-878f-bdc922e4fa7f.png",
+    image: "/lovable-uploads/a6afb0b1-d74f-4757-8530-7c06015be72b.png",
     maxGuests: 2,
     bedType: "King Bed"
   },
