@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import ReservationForm from "@/components/ReservationForm";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { rooms } from "@/data/rooms";
@@ -179,11 +180,11 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <a href="/rooms">
+            <Link to="/rooms">
               <Button variant="outline" size="lg">
                 View All Rooms & Rates
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
