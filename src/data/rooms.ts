@@ -76,7 +76,7 @@ export const rooms: Room[] = [
   {
     id: "executive-suite-king",
     name: "Executive Suites King Room",
-    description: "Premium suite offering luxury accommodations with enhanced amenities and elegant furnishings for the discerning traveler.",
+    description: "Premium suite offering luxury accommodations with enhanced amenities and elegant furnishings for the discerning traveler. Features a jetted bath tub and separate walk-in shower for the ultimate in comfort and relaxation.",
     price: "$130+",
     features: [
       "One king-size bed",
@@ -100,7 +100,7 @@ export const rooms: Room[] = [
   {
     id: "executive-suite-double",
     name: "Executive Suites Double Room",
-    description: "Our most spacious and luxurious accommodation, featuring two queen beds in a premium suite setting with top-tier amenities.",
+    description: "Our most spacious and luxurious accommodation, featuring two queen beds in a premium suite setting with top-tier amenities. Includes a jetted bath tub and separate walk-in shower for an indulgent spa-like experience.",
     price: "$140+",
     features: [
       "Two queen-size beds",
