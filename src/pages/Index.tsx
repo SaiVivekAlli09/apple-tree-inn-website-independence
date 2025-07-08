@@ -188,69 +188,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Location Highlights */}
-      <section className="py-16 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Everything Within Walking Distance
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Located in the heart of downtown Independence, AppleTree Inn puts you steps away from 
-                the city's best dining, entertainment, and attractions.
-              </p>
-              
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-primary font-semibold text-sm">🎬</span>
-                  </div>
-                  <span><strong>Independence Cinemas:</strong> Under 300 feet</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
-                    <span className="text-accent font-semibold text-sm">🍔</span>
-                  </div>
-                  <span><strong>Restaurants:</strong> Taco Bell, McDonald's, Subway, Braum's, Arby's within 0.2 miles</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-primary font-semibold text-sm">🔬</span>
-                  </div>
-                  <span><strong>Science Center:</strong> Less than 0.2 miles</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
-                    <span className="text-accent font-semibold text-sm">🏛️</span>
-                  </div>
-                  <span><strong>Museum of Independence:</strong> Less than 0.3 miles</span>
-                </div>
-              </div>
-
-              <a href="https://maps.app.goo.gl/2YLl1egaIdJDzlmDx" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="lg">
-                  <MapPin className="mr-2 h-5 w-5" />
-                  View on Google Maps
-                </Button>
-              </a>
-            </div>
-
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="/lovable-uploads/36919239-f09b-45af-9159-53489478f68c.png"
-                  alt="AppleTree Inn Exterior"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Hotel Amenities */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -329,7 +268,7 @@ const Index = () => {
       </section>
 
       {/* Reservation Form Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -341,6 +280,67 @@ const Index = () => {
           </div>
           
           <ReservationForm />
+        </div>
+      </section>
+
+      {/* Location Highlights */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Everything Within Walking Distance
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Located in the heart of downtown Independence, AppleTree Inn puts you steps away from 
+                the city's best dining, entertainment, and attractions.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span className="text-primary font-semibold text-sm">🎬</span>
+                  </div>
+                  <span><strong>Independence Cinemas:</strong> Under 300 feet</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
+                    <span className="text-accent font-semibold text-sm">🍔</span>
+                  </div>
+                  <span><strong>Restaurants:</strong> Taco Bell, McDonald's, Subway, Braum's, Arby's within 0.2 miles</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span className="text-primary font-semibold text-sm">🔬</span>
+                  </div>
+                  <span><strong>Science Center:</strong> Less than 0.2 miles</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
+                    <span className="text-accent font-semibold text-sm">🏛️</span>
+                  </div>
+                  <span><strong>Museum of Independence:</strong> Less than 0.3 miles</span>
+                </div>
+              </div>
+
+              <a href="https://maps.app.goo.gl/2YLl1egaIdJDzlmDx" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="lg">
+                  <MapPin className="mr-2 h-5 w-5" />
+                  View on Google Maps
+                </Button>
+              </a>
+            </div>
+
+            <div className="relative">
+              <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/lovable-uploads/36919239-f09b-45af-9159-53489478f68c.png"
+                  alt="AppleTree Inn Exterior"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
