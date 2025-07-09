@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Calendar, Users, CreditCard, Mail, Phone, User } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const ReservationForm = () => {
   const { toast } = useToast();
@@ -55,37 +56,15 @@ const ReservationForm = () => {
       return;
     }
 
-    // Simulate form submission - In a real app, this would send to your backend
     try {
-      // Create email body
-      const emailBody = `
-        New Reservation Request from AppleTree Inn Website
-        
-        Guest Information:
-        - Name: ${formData.guestName}
-        - Email: ${formData.email}
-        - Phone: ${formData.phone}
-        
-        Reservation Details:
-        - Check-in Date: ${formData.checkIn}
-        - Check-out Date: ${formData.checkOut}
-        - Room Type: ${formData.roomType}
-        - Number of Guests: ${formData.numberOfGuests}
-        
-        Payment Information (for room hold):
-        - Credit Card: **** **** **** ${formData.creditCardNumber.slice(-4)}
-        - Expiry: ${formData.expiryDate}
-        - CVV: ***
-        
-        Special Requests:
-        ${formData.specialRequests || 'None'}
-        
-        Note: This reservation request requires confirmation. Please contact the guest to confirm availability and finalize the booking.
-      `;
+      // Send reservation data to Supabase edge function
+      const { data, error } = await supabase.functions.invoke('send-reservation-email', {
+        body: formData
+      });
 
-      // In a real implementation, you would send this to your backend
-      // For demo purposes, we'll show a success message
-      console.log("Reservation data:", { ...formData, emailBody });
+      if (error) {
+        throw error;
+      }
 
       toast({
         title: "Reservation Request Submitted!",
@@ -107,10 +86,11 @@ const ReservationForm = () => {
         specialRequests: "",
       });
 
-    } catch (error) {
+    } catch (error: any) {
+      console.error("Submission error:", error);
       toast({
         title: "Submission Error",
-        description: "There was an error submitting your reservation. Please try again or call us directly.",
+        description: "There was an error submitting your reservation. Please try again or call us directly at (620) 331-5500.",
         variant: "destructive",
       });
     } finally {
