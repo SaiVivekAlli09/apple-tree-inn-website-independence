@@ -312,8 +312,7 @@ const ReservationForm = () => {
           </Button>
           
           <p className="text-sm text-muted-foreground text-center">
-            By submitting this form, you agree to our terms and conditions. 
-            We will contact you within 24 hours to confirm your reservation.
+            Need immediate assistance? Call us at <a href="tel:620-331-5500" className="text-primary hover:underline font-semibold">(620) 331-5500</a>
           </p>
         </form>
       </CardContent>

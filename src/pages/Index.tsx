@@ -276,7 +276,8 @@ const Index = () => {
               Ready to Book Your Stay?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Complete the form below and we'll contact you within 24 hours to confirm your reservation
+              Complete the form below and we'll contact you within 24 hours to confirm your reservation through phone call or email.
+              By submitting this form, you agree to our terms and conditions. We will contact you within 12-24 hours to confirm your reservation by call or email, else you can directly call us on <a href="tel:620-331-5500" className="text-primary hover:underline font-semibold">(620) 331-5500</a> and for any cancellations you must inform 24 hours prior to your checkin date by 3pm before your checkin day.
             </p>
           </div>
           
